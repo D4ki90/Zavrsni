@@ -16,7 +16,7 @@ public void verifySucessfulPurchase (){
     LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
     YourCartPage yourCartPage = new YourCartPage(driver);
-    YourInformationPage checkOutPage = new YourInformationPage(driver);
+    YourInformationPage yourInformationPage = new YourInformationPage(driver);
     OverViewPage overViewPage = new OverViewPage(driver);
     CompleteCheckOutPage completeCheckOutPage = new CompleteCheckOutPage(driver);
 
@@ -27,8 +27,8 @@ public void verifySucessfulPurchase (){
     homePage.verifyProductAddedToCart();
     homePage.navigateToYourCart();
     yourCartPage.clickOnCheckoutButton();
-    checkOutPage.writeInfo(firstName, lastName, postalCode);
-    checkOutPage.continueToOverview();
+    yourInformationPage.writeInfo(firstName, lastName, postalCode);
+    yourInformationPage.continueToOverview();
     overViewPage.checkTotalPrice();
     overViewPage.finish();
     completeCheckOutPage.verifySuccesfulPurchase("THANK YOU FOR YOUR ORDER");
