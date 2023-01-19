@@ -17,7 +17,7 @@ public class HomePage extends BasePage{
     By hamburgerMenuBy = By.id("react-burger-menu-btn");
     String expectedLink = "https://saucelabs.com/";
     By logoutButtonBy = By.id("logout_sidebar_link");
-    By yourCartButtonBy = By.id("shopping_cart_container");
+ 
 
 
 
