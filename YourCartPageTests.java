@@ -15,7 +15,7 @@ public class YourCartPageTests extends BaseTest {
   
     
 @Test
-public void verifySucessfulAddToCart (){
+public void verifyTotalPrice(){
     LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
     YourCartPage yourCartPage = new YourCartPage(driver);
