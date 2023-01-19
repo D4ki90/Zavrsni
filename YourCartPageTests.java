@@ -27,7 +27,7 @@ public void verifyTotalPrice(){
     loginPage.login(standardUsername, password);
     homePage.verifySuccesfulLogin(expectedText);
     homePage.verifyProductAddedToCart();
-    homePage.navigateToYourCart();
+    homePage.clickOnshoppingCartBadge();
     yourCartPage.clickOnCheckoutButton();
     checkOutPage.writeInfo(firstName, lastName, postalCode);
     checkOutPage.continueToOverview();
