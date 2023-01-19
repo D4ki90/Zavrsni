@@ -12,7 +12,7 @@ import stranice.YourInformationPage;
 public class SuccesfulPurchaseTest extends BaseTest {
 
     @Test
-public void verifySucessfulAddToCart (){
+public void verifySucessfulPurchase (){
     LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
     YourCartPage yourCartPage = new YourCartPage(driver);
