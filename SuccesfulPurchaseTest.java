@@ -25,7 +25,7 @@ public void verifySucessfulPurchase (){
     loginPage.login(standardUsername, password);
     homePage.verifySuccesfulLogin(expectedText);
     homePage.verifyProductAddedToCart();
-    homePage.navigateToYourCart();
+    homePage.clickOnshoppingCartBadge();
     yourCartPage.clickOnCheckoutButton();
     yourInformationPage.writeInfo(firstName, lastName, postalCode);
     yourInformationPage.continueToOverview();
