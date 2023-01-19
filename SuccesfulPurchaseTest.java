@@ -31,7 +31,7 @@ public void verifySucessfulPurchase (){
     checkOutPage.continueToOverview();
     overViewPage.checkTotalPrice();
     overViewPage.finish();
-    completeCheckOutPage.verifySuccesfullPurchase("THANK YOU FOR YOUR ORDER");
+    completeCheckOutPage.verifySuccesfulPurchase("THANK YOU FOR YOUR ORDER");
 
     try{
         Thread.sleep(5000);
