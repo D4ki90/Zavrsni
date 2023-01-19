@@ -55,12 +55,6 @@ public class HomePage extends BasePage{
         click(logoutButtonBy);
         return this;
     }
-    public HomePage navigateToYourCart(){
-        click(yourCartButtonBy);
-        return this;
-    }
-
-    
 }
     
 
